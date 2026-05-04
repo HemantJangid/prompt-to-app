@@ -1,0 +1,8 @@
+{
+  "name": "@prompt-to-app/theme-extension",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Shopify CLI builds extensions — run from apps/web with: shopify app build'"
+  }
+}
