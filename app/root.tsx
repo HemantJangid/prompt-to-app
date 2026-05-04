@@ -2,7 +2,7 @@ import type { HeadersFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import { boundary } from "@shopify/shopify-app-remix/server";
 import { AppProvider } from "@shopify/shopify-app-remix/react";
-import { addDocumentResponseHeaders } from "./shopify.server";
+import { addDocumentResponseHeaders } from "#app/shopify.server";
 
 export const links = () => [];
 

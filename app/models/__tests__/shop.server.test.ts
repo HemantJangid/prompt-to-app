@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { upsertShop, getShopByDomain, getShopById } from "../shop.server";
+import { upsertShop, getShopByDomain, getShopById } from "#app/models/shop.server";
 
 // Mock Prisma client
-vi.mock("../../db.server", () => ({
+vi.mock("#app/db.server", () => ({
   default: {
     shop: {
       upsert: vi.fn(),
@@ -11,7 +11,7 @@ vi.mock("../../db.server", () => ({
   },
 }));
 
-import prisma from "../../db.server";
+import prisma from "#app/db.server";
 
 const mockShop = {
   id: "clx123",

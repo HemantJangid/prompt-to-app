@@ -1,5 +1,5 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
-import { authenticate } from "../shopify.server";
+import { authenticate } from "#app/shopify.server";
 
 /**
  * Catch-all auth route — handles /auth, /auth/callback, /auth/login

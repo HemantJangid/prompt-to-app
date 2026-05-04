@@ -1,8 +1,8 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { authenticate } from "../shopify.server";
-import { getShopByDomain } from "../models/shop.server";
+import { authenticate } from "#app/shopify.server";
+import { getShopByDomain } from "#app/models/shop.server";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const { session } = await authenticate.admin(request);

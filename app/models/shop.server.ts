@@ -1,4 +1,4 @@
-import prisma from "../db.server";
+import prisma from "#app/db.server";
 
 export interface UpsertShopInput {
   shopId: string;

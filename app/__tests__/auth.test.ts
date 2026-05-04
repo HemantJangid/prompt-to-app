@@ -11,7 +11,7 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 
 describe("afterAuth hook", () => {
   it("calls upsertShop with session shop domain after successful OAuth", async () => {
-    const { upsertShop } = await import("../models/shop.server");
+    const { upsertShop } = await import("#app/models/shop.server");
     const mockUpsert = vi.fn().mockResolvedValue({
       shopId: "test.myshopify.com",
       domain: "test.myshopify.com",
